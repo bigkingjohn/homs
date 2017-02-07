@@ -6,7 +6,7 @@ gulp.task('serve-dev', [], function () {
         port: 8080,
         host: "localhost",
         root: "./www/",
-        open: true,
+        open: false,
         file: "index.html",
         wait: 500
     };
