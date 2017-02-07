@@ -1,0 +1,131 @@
+<div class="pattblock">body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	line-height: 1.2em;
+}
+
+a {
+	color:#4E78A5 ;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+h4 {
+	font-style: italic;
+	font-weight: normal;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+
+.wrapper {
+	border-style: solid;
+	border-color: crimson;
+	padding: 15px;
+}
+
+.header {
+	border-style: solid;
+	border-color:chartreuse;
+	padding: 5px;
+	clear: both;
+}
+
+.bioblock {
+	display: block;
+	max-width: 240px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 30px;
+	padding: 10px;
+}
+
+.bioblockwide {
+	display: block;
+	max-width: 360px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 30px;
+	padding: 10px;
+}
+
+.pattblock {
+	display: block;
+	width: 860px;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	clear: both;
+}
+
+.bgcolour {
+	background-color: #E1E1E1;
+	display: block;
+	border-radius: 30px;
+	max-width: 910px;
+}
+
+h1 {
+	"font-family": ; 
+}
+
+.biopic {
+	float: left;
+	border-radius: 15px;
+	border-style: solid;
+	border-color: white;
+	border-width: thick;
+	display: block;
+  	max-height:240px;
+  	width: auto;
+  	height: auto;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.patttmb_left {
+	float: left;
+	border-radius: 15px;
+	border-style: solid;
+	border-color: white;
+	border-width: thick;
+	display: block;
+  	max-height:240px;
+  	width: auto;
+  	height: auto;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.patttmb_right {
+	float: right;
+	border-radius: 15px;
+	border-style: solid;
+	border-color: white;
+	border-width: thick;
+	display: block;
+  	height: 240px;
+	width: 240px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.bodydiv {
+	clear: both;
+}
+
+.wrapper {
+	border-style: solid;
+	border-color: coral;
+	padding: 5px;
+}
+
+.button_social {
+	float: left;
+	display: block;
+	max-height: 30px;
+	max-width: 30px;
+	margin-right: 6px;
+
+}
+
+</div>
