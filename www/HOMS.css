@@ -1,4 +1,4 @@
-<div class="pattblock">body {
+body {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	line-height: 1.2em;
 }
@@ -65,7 +65,7 @@ h4 {
 }
 
 h1 {
-	"font-family": ; 
+	"font-family": ;
 }
 
 .biopic {
@@ -125,7 +125,14 @@ h1 {
 	max-height: 30px;
 	max-width: 30px;
 	margin-right: 6px;
-
 }
 
-</div>
+/*.imageView {
+	max-height:400px;
+	max-width: 400px;
+}*/
+
+/*.imageNav {
+	max-height:100px;
+	max-width: 100px;
+}*/
