@@ -4,22 +4,20 @@ $(document).ready(function(){
     $('.imageView').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         fade: false,
         centerMode: true,
-        centerPadding: '200px',
+        centerPadding: '0px',
         asNavFor: '.imageNav',
-        variableWidth: true,
-        // adaptiveHeight: true,
     });
 
     $('.imageNav').slick({
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '.imageView',
         dots: true,
         centerMode: true,
-        centerPadding: '100px',
+        centerPadding: '20px',
         focusOnSelect: true
     });
 });

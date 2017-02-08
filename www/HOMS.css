@@ -127,12 +127,50 @@ h1 {
 	margin-right: 6px;
 }
 
-/*.imageView {
-	max-height:400px;
-	max-width: 400px;
-}*/
+.imageView {
+		width: 60%;
+		min-width: 400px;
+		max-width: 1000px;
+		height: 600px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
+		/*border: dashed blue 2px;*/
+}
 
-/*.imageNav {
-	max-height:100px;
-	max-width: 100px;
-}*/
+.imageContainer {
+		max-width: 90%;
+		width: auto;
+		height: 592px !important;
+		/*border: dashed red 2px;*/
+}
+
+.imageContainer img{
+		max-width: 90%;
+		width: auto;
+		max-height: 100%;
+		height: auto;
+		margin: auto;
+		vertical-align: middle;
+}
+
+.imageNav {
+		width: 60%;
+		min-width: 400px;
+		max-width: 1000px;
+		height: 120px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
+		/*border: dashed blue 2px;*/
+}
+
+.imageNavContainer {
+		max-width: 90%;
+		width: auto;
+		height: 112px !important;
+		/*border: dashed red 2px;*/
+}
+
+.imageNavContainer img{
+		max-width: 90%;
+		width: auto;
+		max-height: 100%;
+		height: auto;
+		margin: auto;
+		vertical-align: middle;
+}
