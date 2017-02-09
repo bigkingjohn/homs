@@ -1,5 +1,3 @@
-console.log("loaded again");
-
 $(document).ready(function(){
     $('.imageView').slick({
         slidesToShow: 1,

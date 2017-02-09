@@ -127,12 +127,32 @@ h1 {
 	margin-right: 6px;
 }
 
-.imageView {
+.flexContainer {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftPanel {
 		width: 60%;
+		min-width: 400px;
+}
+
+.rightPanel {
+		min-width: 400px;
+		padding: 20px;
+}
+
+.bottomPanel {
+}
+
+.imageView {
+		width: 100%;
 		min-width: 400px;
 		max-width: 1000px;
 		height: 600px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
 		/*border: dashed blue 2px;*/
+		background-color: lightgrey;
 }
 
 .imageContainer {
@@ -152,7 +172,7 @@ h1 {
 }
 
 .imageNav {
-		width: 60%;
+		width: 100%;
 		min-width: 400px;
 		max-width: 1000px;
 		height: 120px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
@@ -173,4 +193,37 @@ h1 {
 		height: auto;
 		margin: auto;
 		vertical-align: middle;
+}
+
+.tabNavBar {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabNavBar li {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px;
+    display: inline;
+    width: 3em;
+}
+
+.tabNavBar li:hover {
+		background: blue;
+		/*font-weight: bold;*/
+		cursor: pointer;
+}
+
+/*.tabNavBar li a{
+		color: green;
+		font-weight: normal;
+}*/
+
+.tabDataHidden {
+		display: none;
+}
+
+.tabSelected {
+		background: red;
 }
