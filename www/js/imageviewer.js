@@ -2,11 +2,12 @@ $(document).ready(function(){
     $('.imageView').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: false,
         centerMode: true,
         centerPadding: '0px',
         asNavFor: '.imageNav',
+        variableWidth:true,
     });
 
     $('.imageNav').slick({
@@ -15,7 +16,8 @@ $(document).ready(function(){
         asNavFor: '.imageView',
         dots: true,
         centerMode: true,
-        centerPadding: '20px',
-        focusOnSelect: true
+        centerPadding: '100px',
+        focusOnSelect: true,
+        variableWidth:true,
     });
 });

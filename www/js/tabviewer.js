@@ -1,9 +1,9 @@
 var currentlySelectedTab;
 
 $(document).ready(function(){
-    $("#tabM").toggleClass("tabDataHidden");
-    $("#tabHeaderM").toggleClass("tabSelected");
-    currentlySelectedTab = "M";
+    $("#tabSizing").toggleClass("tabDataHidden");
+    $("#tabHeaderSizing").toggleClass("tabSelected");
+    currentlySelectedTab = "Sizing";
 });
 
 function showTab(tabId) {
