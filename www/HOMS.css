@@ -209,16 +209,10 @@ h1 {
     width: 3em;
 }
 
-.tabNavBar li:hover {
-		background: blue;
-		/*font-weight: bold;*/
-		cursor: pointer;
-}
-
-/*.tabNavBar li a{
+.tabNavBar li a{
 		color: green;
 		font-weight: normal;
-}*/
+}
 
 .tabDataHidden {
 		display: none;
