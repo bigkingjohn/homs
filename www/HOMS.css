@@ -170,15 +170,15 @@ h1 {
     .leftPanel {
         width: 100%;
         min-width: 400px;
-        border: dashed red 1px;
-        background-color: lightgreen;
+        /*border: dashed red 1px;*/
+        /*background-color: lightgreen;*/
     }
 
     .rightPanel {
         min-width: 300px;
         width: 100%;
-        padding: 20px;
-        border: dashed red 1px;
+        /*padding: 20px;*/
+        /*border: dashed red 1px;*/
     }
 }
 
@@ -186,18 +186,17 @@ h1 {
     .leftPanel {
         width: 55%;
         min-width: 400px;
-        border: dashed red 1px;
-        background-color: yellow;
+        /*border: dashed red 1px;*/
+        /*background-color: yellow;*/
     }
 
     .rightPanel {
         min-width: 300px;
-        width: 35%;
-        padding: 20px;
-        border: dashed red 1px;
+        width: 40%;
+        /*padding: 20px;*/
+        /*border: dashed red 1px;*/
     }
 }
-
 
 /*.leftPanel {
     width: 55%;
@@ -213,22 +212,110 @@ h1 {
 }*/
 
 .bottomPanel {
-    border: dashed red 1px;
+    /*border: dashed red 1px;*/
+    width: 95%;
 }
 
-.imageView {
-    width: 100%;
-    /*min-width: 400px;*/
-    height: 600px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
-    /*border: dashed blue 2px;*/
-    /*background-color: lightgrey;*/
+@media screen and (min-height: 0px){
+    .imageView {
+        width: 100%;
+        /*min-width: 400px;*/
+        height: 180px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
+        /*border: dashed blue 2px;*/
+        /*background-color: lightgrey;*/
+    }
+
+    .imageContainer {
+        max-width: 90%;
+        width: auto;
+        height: 190px !important;
+        /*border: dashed red 2px;*/
+    }
 }
 
-.imageContainer {
-    max-width: 90%;
-    width: auto;
-    height: 592px !important;
-    /*border: dashed red 2px;*/
+@media screen and (min-height: 300px){
+    .imageView {
+        width: 100%;
+        /*min-width: 400px;*/
+        height: 250px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
+        /*border: dashed blue 2px;*/
+        /*background-color: lightgrey;*/
+    }
+
+    .imageContainer {
+        max-width: 90%;
+        width: auto;
+        height: 270px !important;
+        /*border: dashed red 2px;*/
+    }
+}
+
+@media screen and (min-height: 400px){
+    .imageView {
+        width: 100%;
+        /*min-width: 400px;*/
+        height: 350px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
+        /*border: dashed blue 2px;*/
+        /*background-color: blue;*/
+    }
+
+    .imageContainer {
+        max-width: 90%;
+        width: auto;
+        height: 380px !important;
+        /*border: dashed red 2px;*/
+    }
+}
+
+@media screen and (min-height: 500px){
+    .imageView {
+        width: 100%;
+        /*min-width: 400px;*/
+        height: 400px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
+        /*border: dashed blue 2px;*/
+        /*background-color: red;*/
+    }
+
+    .imageContainer {
+        max-width: 90%;
+        width: auto;
+        height: 430px !important;
+        /*border: dashed red 2px;*/
+    }
+}
+
+@media screen and (min-height: 600px){
+    .imageView {
+        width: 100%;
+        /*min-width: 400px;*/
+        height: 500px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
+        /*border: dashed blue 2px;*/
+        /*background-color: green;*/
+    }
+
+    .imageContainer {
+        max-width: 90%;
+        width: auto;
+        height: 540px !important;
+        /*border: dashed red 2px;*/
+    }
+}
+
+@media screen and (min-height: 800px){
+    .imageView {
+        width: 100%;
+        /*min-width: 400px;*/
+        height: 700px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
+        /*border: dashed blue 2px;*/
+        /*background-color: yellow;*/
+    }
+
+    .imageContainer {
+        max-width: 90%;
+        width: auto;
+        height: 750px !important;
+        /*border: dashed red 2px;*/
+    }
 }
 
 .imageContainer img{
@@ -267,19 +354,26 @@ h1 {
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
+    /*border: solid green 1px;*/
+    -webkit-padding-start: 0;
 }
 
 .tabNavBar li {
     list-style-type: none;
     margin: 0;
     padding: 10px 20px;
-    display: inline;
-    width: 3em;
+    /*display: inline;*/
+
+    width: 10em;
+
+    border: solid black 1px;
 }
 
-.tabNavBar li a{
+.tabNavBar li a {
     color: green;
     font-weight: normal;
+    width: 100%;
+    text-align: center;
 }
 
 .tabDataHidden {
@@ -293,19 +387,30 @@ h1 {
 .purchaseBox {
     border: solid black 1px;
     padding: 1px;
-    border-radius: 5px;
+    border-radius: 2px;
+
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap
 }
 
 .purchaseImages {
-    vertical-align: middle;
-    /*margin: 0 auto;*/
-    width: 40%;
+    border: solid black 1px;
 }
 
 .purchaseImages img {
-    margin: 0 auto;
+    margin: auto;
+    display: block;
+    padding: 10px;
 }
 
 .purchaseBlurb {
-    width: 50%;
+    display: block;
+    padding: 10px;
+    border: solid black 1px;
+    margin: 0;
+}
+
+.boxContent {
+    padding: 1em;
 }
