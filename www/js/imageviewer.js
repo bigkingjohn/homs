@@ -8,16 +8,18 @@ $(document).ready(function(){
         centerPadding: '0px',
         asNavFor: '.imageNav',
         variableWidth:true,
+        infinite: false,
     });
 
     $('.imageNav').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '.imageView',
-        dots: true,
+        // dots: true,
         centerMode: true,
         centerPadding: '100px',
         focusOnSelect: true,
         variableWidth:true,
+        infinite: false,
     });
 });
