@@ -170,15 +170,11 @@ h1 {
     .leftPanel {
         width: 100%;
         min-width: 400px;
-        /*border: dashed red 1px;*/
-        /*background-color: lightgreen;*/
     }
 
     .rightPanel {
         min-width: 300px;
         width: 100%;
-        /*padding: 20px;*/
-        /*border: dashed red 1px;*/
     }
 }
 
@@ -186,15 +182,11 @@ h1 {
     .leftPanel {
         width: 55%;
         min-width: 400px;
-        /*border: dashed red 1px;*/
-        /*background-color: yellow;*/
     }
 
     .rightPanel {
         min-width: 300px;
         width: 40%;
-        /*padding: 20px;*/
-        /*border: dashed red 1px;*/
     }
 }
 
@@ -202,112 +194,81 @@ h1 {
     border-bottom: solid grey 6px;
 }
 
-/*.rightPanel {
-    min-width: 400px;
-    width: 35%;
-    padding: 20px;
-    border: dashed red 1px;
-}*/
-
 @media screen and (min-height: 0px){
     .imageView {
         width: 100%;
-        /*min-width: 400px;*/
         height: 180px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
-        /*border: dashed blue 2px;*/
-        /*background-color: lightgrey;*/
     }
 
     .imageContainer {
         max-width: 90%;
         width: auto;
         height: 190px !important;
-        /*border: dashed red 2px;*/
     }
 }
 
 @media screen and (min-height: 300px){
     .imageView {
         width: 100%;
-        /*min-width: 400px;*/
         height: 250px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
-        /*border: dashed blue 2px;*/
-        /*background-color: lightgrey;*/
     }
 
     .imageContainer {
         max-width: 90%;
         width: auto;
         height: 270px !important;
-        /*border: dashed red 2px;*/
     }
 }
 
 @media screen and (min-height: 400px){
     .imageView {
         width: 100%;
-        /*min-width: 400px;*/
         height: 350px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
-        /*border: dashed blue 2px;*/
-        /*background-color: blue;*/
     }
 
     .imageContainer {
         max-width: 90%;
         width: auto;
         height: 380px !important;
-        /*border: dashed red 2px;*/
     }
 }
 
 @media screen and (min-height: 500px){
     .imageView {
         width: 100%;
-        /*min-width: 400px;*/
         height: 400px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
-        /*border: dashed blue 2px;*/
-        /*background-color: red;*/
     }
 
     .imageContainer {
         max-width: 90%;
         width: auto;
         height: 430px !important;
-        /*border: dashed red 2px;*/
     }
 }
 
 @media screen and (min-height: 600px){
     .imageView {
         width: 100%;
-        /*min-width: 400px;*/
         height: 500px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
-        /*border: dashed blue 2px;*/
-        /*background-color: green;*/
     }
 
     .imageContainer {
         max-width: 90%;
         width: auto;
         height: 540px !important;
-        /*border: dashed red 2px;*/
     }
 }
 
 @media screen and (min-height: 800px){
     .imageView {
         width: 100%;
-        /*min-width: 400px;*/
         height: 700px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
-        /*border: dashed blue 2px;*/
-        /*background-color: yellow;*/
     }
 
     .imageContainer {
         max-width: 90%;
         width: auto;
         height: 750px !important;
-        /*border: dashed red 2px;*/
     }
 }
 
@@ -324,14 +285,12 @@ h1 {
     width: 100%;
     min-width: 400px;
     height: 120px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
-    /*border: dashed blue 2px;*/
 }
 
 .imageNavContainer {
     max-width: 90%;
     width: auto;
     height: 112px !important;
-    /*border: dashed red 2px;*/
 }
 
 .imageNavContainer img{
@@ -396,7 +355,6 @@ h1 {
 .tabNavBar div {
     margin: 0;
     padding: 10px 20px;
-    /*border: solid black 1px;*/
     background: lightgrey;
     border-top: solid lightgrey 2px;
     border-right: solid lightgrey 2px;
@@ -404,7 +362,6 @@ h1 {
 }
 
 .tabContent {
-    /*border: solid black 1px;*/
     min-width: 358px;
     max-width: 800px;
     padding: 0em 1em;
