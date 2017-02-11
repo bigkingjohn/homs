@@ -180,8 +180,29 @@ h1 {
     white-space: nowrap;
 }
 
-.navBarSelected {
-    color: grey;
+.footerBar {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px 0px 0px 0px;
+    border-top: solid lightgrey 2px;
+}
+
+.footerBar div {
+    margin: 0;
+    padding: 1em 1em;
+    font-size: 0.8em;
+    /*font-weight: bold;*/
+    /*color: grey;*/
+    white-space: nowrap;
+}
+
+.button_social2 {
+  float: right;
+  display: block;
+  max-height: 30px;
+  max-width: 30px;
+  margin-right: 6px;
 }
 
 .flexContainer {
