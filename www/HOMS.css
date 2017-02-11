@@ -55,10 +55,8 @@ h4 {
   padding: 15px;
 }
 
-.header {
-  border-style: solid;
-  border-color:chartreuse;
-  padding: 5px;
+.headerImage {
+  padding: 0px 30px;
   clear: both;
 }
 
@@ -160,6 +158,32 @@ h1 {
   margin-right: 6px;
 }
 
+.header {
+    border-bottom: solid lightgrey 2px;
+    min-width: 800px
+    margin: 0px;
+}
+
+
+.navBar {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px 0px 0px 20px;
+}
+
+.navBar div {
+    margin: 0;
+    padding: 10px 12px;
+    font-weight: bold;
+    color: grey;
+    white-space: nowrap;
+}
+
+.navBarSelected {
+    color: grey;
+}
+
 .flexContainer {
     display: -webkit-flex;
     display: flex;
@@ -191,7 +215,7 @@ h1 {
 }
 
 .leftPanel {
-    border-bottom: solid grey 6px;
+    border-bottom: solid lightgrey 2px;
 }
 
 @media screen and (min-height: 0px){
