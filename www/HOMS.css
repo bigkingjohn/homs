@@ -187,23 +187,32 @@ h1 {
     flex-wrap: nowrap;
     margin: 20px 0px 0px 0px;
     border-top: solid lightgrey 2px;
+    width: 95%;
 }
 
-.footerBar div {
+.footerBar span {
     margin: 0;
-    padding: 1em 1em;
+    padding: 1em 0.6em;
     font-size: 0.8em;
-    /*font-weight: bold;*/
-    /*color: grey;*/
     white-space: nowrap;
 }
 
-.button_social2 {
-  float: right;
-  display: block;
-  max-height: 30px;
-  max-width: 30px;
-  margin-right: 6px;
+.footerFlex {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footerFlex p {
+    font-size: 0.8em;
+    padding: 0em 0em 0em 1em;
+}
+
+.footerSocial {
+    max-height: 2em;
+    max-width: 2em;
+    margin: 0em 0em 0em 0.5em;
+    vertical-align: middle;
 }
 
 .flexContainer {
@@ -244,11 +253,6 @@ h1 {
         max-width: 80%;
         /* scale to 100% on narrower screens*/
     }
-}
-
-.leftPanel {
-    border-bottom: solid lightgrey 2px;
-    max-width: 1000px;
 }
 
 @media screen and (min-height: 0px){
@@ -455,6 +459,15 @@ h1 {
 }
 
 
+.leftPanel {
+    border-bottom: solid lightgrey 2px;
+    max-width: 1000px;
+}
+
+.rightPanel {
+    border-bottom: solid lightgrey 2px;
+}
+
 .imageContainer img{
     max-width: 95%;
     width: auto;
@@ -523,6 +536,7 @@ h1 {
 }
 
 .bottomPanel {
+    margin: 12px 0px 0px 0px;
     width: 95%;
 }
 
