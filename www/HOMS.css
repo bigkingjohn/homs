@@ -2,35 +2,6 @@ body {
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
-/*ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
- /*   background-color: #333; */
-/*  border-radius: 15px;
-}*/
-
-/*li {
-    float: left;
-}*/
-
-/*li a {
-    display: block;
-    color:lightblue;
-    text-align: center;
-    padding: 14px 16px;
-  margin-right: 15px;
-    text-decoration: none;
-  border-radius: 15px;
-}
-
-li a:hover {
-    background-color: #111;
-}
-*/
-
-
 .active {
     background-color: #4CAF50;
 }
@@ -313,7 +284,6 @@ h1 {
 
 @media screen and (min-height: 600px){
     .imageView {
-        background-color: blue;
         width: 100%;
         height: 500px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
     }
@@ -332,7 +302,6 @@ h1 {
 
 @media screen and (min-height: 700px){
     .imageView {
-        background-color: green;
         width: 100%;
         height: 600px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
     }
@@ -346,7 +315,6 @@ h1 {
 
 @media screen and (min-height: 800px){
     .imageView {
-        background-color: blue;
         width: 100%;
         height: 700px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
     }
@@ -364,7 +332,6 @@ h1 {
 
 @media screen and (min-height: 900px){
     .imageView {
-        background-color: red;
         width: 100%;
         height: 800px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
     }
@@ -382,7 +349,6 @@ h1 {
 
 @media screen and (min-height: 1000px){
     .imageView {
-        background-color: yellow;
         width: 100%;
         height: 900px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
     }
@@ -400,7 +366,6 @@ h1 {
 
 @media screen and (min-height: 1100px){
     .imageView {
-        background-color: orange;
         width: 100%;
         height: 1000px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
     }
@@ -414,7 +379,6 @@ h1 {
 
 @media screen and (min-height: 1200px){
     .imageView {
-        background-color: black;
         width: 100%;
         height: 1100px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
     }
@@ -432,7 +396,6 @@ h1 {
 
 @media screen and (min-height: 1300px){
     .imageView {
-        background-color: pink;
         width: 100%;
         height: 1200px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
     }
@@ -446,7 +409,6 @@ h1 {
 
 @media screen and (min-height: 1400px){
     .imageView {
-        background-color: brown;
         width: 100%;
         height: 1300px; /* Must be set as a fixed pixel size for child images to respect their max-height*/
     }
