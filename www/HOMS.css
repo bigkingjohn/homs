@@ -262,6 +262,10 @@ h1 {
         width: auto;
         height: 190px !important;
     }
+
+    .headerImage img {
+        height: 100px;
+    }
 }
 
 @media screen and (min-height: 300px){
@@ -348,6 +352,10 @@ h1 {
         width: auto;
         height: 750px !important;
     }
+
+    .headerImage img {
+        height: 150px;
+    }
 }
 
 @media screen and (min-height: 900px){
@@ -379,6 +387,10 @@ h1 {
         max-width: 90%;
         width: auto;
         height: 970px !important;
+    }
+
+    .headerImage img {
+        height: 200px;
     }
 }
 
