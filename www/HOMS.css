@@ -66,10 +66,6 @@ h4 {
   max-width: 910px;
 }
 
-h1 {
-  /*"font-family": ;*/
-}
-
 .biopic {
   float: left;
   border-radius: 15px;
@@ -149,7 +145,6 @@ h1 {
     font-weight: bold;
     color: grey;
     white-space: nowrap;
-    font-size: 24px;
 }
 
 .footerBar {
@@ -206,6 +201,12 @@ h1 {
     .purchaseBoxContainer {
         max-width: 100%;
         /* scale to 100% on narrower screens*/
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .purchaseBox {
+        max-width: 720px;
     }
 }
 
@@ -472,12 +473,11 @@ h1 {
 .purchaseBox {
     padding: 1px;
     border-radius: 10px;
-
     display: -webkit-flex;
     display: flex;
     flex-wrap: nowrap;
     background-color: lightgrey;
-    min-width: 300px;
+    min-width: 460px;
 }
 
 .purchaseImages img {
@@ -490,7 +490,6 @@ h1 {
     display: block;
     padding: 0em 1em;
     margin: 0;
-    font-size: 40px;
 }
 
 .boxContent {
@@ -512,7 +511,6 @@ h1 {
 .tabNavBar div {
     margin: 0;
     padding: 10px 20px;
-    font-size: 32px;
     background: lightgrey;
     border-top: solid lightgrey 2px;
     border-right: solid lightgrey 2px;
@@ -530,7 +528,6 @@ h1 {
 .tabContent div {
     padding: 10px;
     min-height: 300px;
-    font-size: 16px;
 }
 
 .patternTitle {
