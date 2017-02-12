@@ -1,6 +1,5 @@
 body {
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-  line-height: 1.2em;
 }
 
 /*ul {
@@ -57,6 +56,7 @@ h4 {
 
 .headerImage {
   padding: 0px 30px;
+  width: 100%;
   clear: both;
 }
 
@@ -174,10 +174,11 @@ h1 {
 
 .navBar div {
     margin: 0;
-    padding: 10px 12px;
+    padding: 10px 6px;
     font-weight: bold;
     color: grey;
     white-space: nowrap;
+    font-size: 24px;
 }
 
 .footerBar {
@@ -221,6 +222,11 @@ h1 {
         min-width: 300px;
         width: 100%;
     }
+
+    .purchaseBoxContainer {
+        max-width: 100%;
+        /* scale to 100% on narrower screens*/
+    }
 }
 
 @media screen and (min-width: 1050px) {
@@ -232,6 +238,11 @@ h1 {
     .rightPanel {
         min-width: 300px;
         width: 40%;
+    }
+
+    .purchaseBoxContainer {
+        max-width: 80%;
+        /* scale to 100% on narrower screens*/
     }
 }
 
@@ -304,6 +315,11 @@ h1 {
         width: auto;
         height: 540px !important;
     }
+
+
+    .purchaseImages img {
+        min-height: 300px;
+    }
 }
 
 @media screen and (min-height: 700px){
@@ -346,6 +362,10 @@ h1 {
         width: auto;
         height: 860px !important;
     }
+
+    .purchaseImages img {
+        min-height: 400px;
+    }
 }
 
 @media screen and (min-height: 1000px){
@@ -362,20 +382,6 @@ h1 {
     }
 }
 
-/*@media screen and (min-height: 1000px){
-    .imageView {
-        background-color: green;
-        width: 100%;
-        height: 900px;  Must be set as a fixed pixel size for child images to respect their max-height
-    }
-
-    .imageContainer {
-        max-width: 90%;
-        width: auto;
-        height: 970px !important;
-    }
-}
-*/
 @media screen and (min-height: 1100px){
     .imageView {
         background-color: orange;
@@ -401,6 +407,10 @@ h1 {
         max-width: 90%;
         width: auto;
         height: 1190px !important;
+    }
+
+    .purchaseImages img {
+        min-height: 500px;
     }
 }
 
@@ -471,11 +481,6 @@ h1 {
     background: white !important;
 }
 
-.purchaseBoxContainer {
-    max-width: 420px;
-    /* scale to 100% on narrower screens*/
-}
-
 .purchaseBox {
     padding: 1px;
     border-radius: 10px;
@@ -497,6 +502,7 @@ h1 {
     display: block;
     padding: 0em 1em;
     margin: 0;
+    font-size: 40px;
 }
 
 .boxContent {
@@ -517,6 +523,7 @@ h1 {
 .tabNavBar div {
     margin: 0;
     padding: 10px 20px;
+    font-size: 32px;
     background: lightgrey;
     border-top: solid lightgrey 2px;
     border-right: solid lightgrey 2px;
@@ -534,6 +541,7 @@ h1 {
 .tabContent div {
     padding: 10px;
     min-height: 300px;
+    font-size: 16px;
 }
 
 .patternTitle {
