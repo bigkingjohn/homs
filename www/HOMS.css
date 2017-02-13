@@ -198,7 +198,6 @@ h4 {
     max-height: 4vh;
     max-width: 4vh;
     margin: 0em 0em 0em 0.5em;
-    /*vertical-align: middle;*/
 }
 
 .flexContainer {
@@ -209,17 +208,19 @@ h4 {
 
 @media screen and (min-width: 0px) {
     .leftPanel {
-        width: 100%;
         min-width: 400px;
     }
 
     .rightPanel {
-        min-width: 300px;
         width: 100%;
     }
 
     .headerImage img {
         max-width: 100vw;
+    }
+
+    .footerBar {
+        max-width: 100%;
     }
 }
 
@@ -238,12 +239,14 @@ h4 {
 @media screen and (min-width: 1050px) {
     .leftPanel {
         width: 55%;
-        min-width: 400px;
     }
 
     .rightPanel {
-        min-width: 300px;
         width: 40%;
+    }
+
+    .footerBar {
+        max-width: 95%;
     }
 }
 
