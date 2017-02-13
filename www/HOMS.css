@@ -1,5 +1,10 @@
+@-ms-viewport{
+  width: device-width;
+}
+
 body {
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-size: 16px;
 }
 
 .active {
@@ -10,6 +15,11 @@ a {
   color:#4E78A5 ;
   text-decoration: none;
   font-weight: bold;
+  font-size: 110%;
+}
+
+p {
+    font-size: 100%;
 }
 
 h4 {
@@ -26,7 +36,7 @@ h4 {
 }
 
 .headerImage {
-  padding: 0px 30px;
+  padding: 1em 1em;
   width: 100%;
   clear: both;
 }
@@ -127,22 +137,24 @@ h4 {
 
 .header {
     border-bottom: solid lightgrey 2px;
-    min-width: 800px;
-    margin: 0px;
-}
+    margin: 0px auto;
 
+}
 
 .navBar {
     display: -webkit-flex;
     display: flex;
-    flex-wrap: nowrap;
-    margin: 0px 0px 0px 20px;
+    max-width: 100vw;
+    flex-wrap: wrap;
+    margin: 0 0 1em 1.2em;
+    justify-content: space-between;
 }
 
 .navBar div {
     margin: 0;
-    padding: 10px 6px;
+    padding: 0.2em 0.8em;
     font-weight: bold;
+    font-size: 120%;
     color: grey;
     white-space: nowrap;
 }
@@ -150,15 +162,20 @@ h4 {
 .footerBar {
     display: -webkit-flex;
     display: flex;
-    flex-wrap: nowrap;
-    margin: 20px 0px 0px 0px;
+    flex-wrap: wrap;
+    margin: 1.5em 0 0.5em 0;
     border-top: solid lightgrey 2px;
-    width: 95%;
 }
 
 .footerBar span {
+    padding: 0.3em 0;
+}
+
+
+.footerBar a {
+    width: 100%;
     margin: 0;
-    padding: 1em 0.6em;
+    padding: 0 0.6em;
     font-size: 0.8em;
     white-space: nowrap;
 }
@@ -167,16 +184,18 @@ h4 {
     display: -webkit-flex;
     display: flex;
     flex-wrap: nowrap;
+    margin: 1em 0;
 }
 
 .footerFlex p {
     font-size: 0.8em;
+    margin: 0;
     padding: 0em 0em 0em 1em;
 }
 
 .footerSocial {
-    max-height: 2em;
-    max-width: 2em;
+    max-height: 4vh;
+    max-width: 4vh;
     margin: 0em 0em 0em 0.5em;
     vertical-align: middle;
 }
@@ -185,6 +204,7 @@ h4 {
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
+    border: dashed blue 2px;
 }
 
 @media screen and (min-width: 0px) {
@@ -198,17 +218,22 @@ h4 {
         width: 100%;
     }
 
-    .purchaseBoxContainer {
-        max-width: 100%;
-        /* scale to 100% on narrower screens*/
+    .headerImage img {
+        max-width: 100vw;
     }
 }
 
-@media screen and (min-width: 1000px) {
-    .purchaseBox {
-        max-width: 720px;
-    }
+
+@media screen and (min-width: 500px) {
 }
+
+@media screen and (min-width: 700px) {
+}
+
+@media screen and (min-width: 1000px) {
+
+}
+
 
 @media screen and (min-width: 1050px) {
     .leftPanel {
@@ -219,11 +244,6 @@ h4 {
     .rightPanel {
         min-width: 300px;
         width: 40%;
-    }
-
-    .purchaseBoxContainer {
-        max-width: 80%;
-        /* scale to 100% on narrower screens*/
     }
 }
 
@@ -237,10 +257,6 @@ h4 {
         max-width: 90%;
         width: auto;
         height: 190px !important;
-    }
-
-    .headerImage img {
-        height: 100px;
     }
 }
 
@@ -294,11 +310,6 @@ h4 {
         width: auto;
         height: 540px !important;
     }
-
-
-    .purchaseImages img {
-        min-height: 300px;
-    }
 }
 
 @media screen and (min-height: 700px){
@@ -325,10 +336,6 @@ h4 {
         width: auto;
         height: 750px !important;
     }
-
-    .headerImage img {
-        height: 150px;
-    }
 }
 
 @media screen and (min-height: 900px){
@@ -342,10 +349,6 @@ h4 {
         width: auto;
         height: 860px !important;
     }
-
-    .purchaseImages img {
-        min-height: 400px;
-    }
 }
 
 @media screen and (min-height: 1000px){
@@ -358,10 +361,6 @@ h4 {
         max-width: 90%;
         width: auto;
         height: 970px !important;
-    }
-
-    .headerImage img {
-        height: 200px;
     }
 }
 
@@ -388,10 +387,6 @@ h4 {
         max-width: 90%;
         width: auto;
         height: 1190px !important;
-    }
-
-    .purchaseImages img {
-        min-height: 500px;
     }
 }
 
@@ -424,11 +419,13 @@ h4 {
 
 .leftPanel {
     border-bottom: solid lightgrey 2px;
+    border: dashed red 2px;
     max-width: 1000px;
 }
 
 .rightPanel {
     border-bottom: solid lightgrey 2px;
+    border: dashed green 2px;
 }
 
 .imageContainer img{
@@ -477,13 +474,13 @@ h4 {
     display: flex;
     flex-wrap: nowrap;
     background-color: lightgrey;
-    min-width: 460px;
 }
 
 .purchaseImages img {
     margin: auto;
     display: block;
     padding: 1em 1em;
+    max-height: 25vh;
 }
 
 .purchaseBlurb {
@@ -497,37 +494,37 @@ h4 {
 }
 
 .bottomPanel {
-    margin: 12px 0px 0px 0px;
-    width: 95%;
+    margin: 1em 1em 0 1em;
+    /*width: 95%;*/
+    border: solid lightgrey 2px;
 }
 
 .tabNavBar {
     display: -webkit-flex;
     display: flex;
     flex-wrap: nowrap;
-    margin: 0px 40px
+    justify-content: space-between;
+    background: lightgrey;
 }
 
 .tabNavBar div {
+    max-width: 100vw;
     margin: 0;
     padding: 10px 20px;
     background: lightgrey;
-    border-top: solid lightgrey 2px;
-    border-right: solid lightgrey 2px;
-    border-left: solid lightgrey 2px;
+    font-size: 80%;
 }
 
 .tabContent {
-    min-width: 358px;
-    max-width: 800px;
+    max-width: 100vw;
     padding: 0em 1em;
-    margin: 0px 40px;
-    border: solid lightgrey 2px;
+    border-top: solid lightgrey 2px;
+    font-size: 80%;
 }
 
 .tabContent div {
     padding: 10px;
-    min-height: 300px;
+    min-height: 40vh;
 }
 
 .patternTitle {
@@ -537,4 +534,14 @@ h4 {
 .designerName {
     font-size: 1em;
     margin: 0em;
+}
+
+.carousel {
+    /*max-height: 500px;*/
+}
+
+.indexText {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0px 100px;
 }
