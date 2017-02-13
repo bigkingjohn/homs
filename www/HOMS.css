@@ -204,7 +204,6 @@ h4 {
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
-    border: dashed blue 2px;
 }
 
 @media screen and (min-width: 0px) {
@@ -419,13 +418,11 @@ h4 {
 
 .leftPanel {
     border-bottom: solid lightgrey 2px;
-    border: dashed red 2px;
     max-width: 1000px;
 }
 
 .rightPanel {
     border-bottom: solid lightgrey 2px;
-    border: dashed green 2px;
 }
 
 .imageContainer img{
