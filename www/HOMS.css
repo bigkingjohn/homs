@@ -562,7 +562,7 @@ h2 {
 .flexChild {
     max-width: 20vw;
     min-width: 500px; /* TODO take a look at fixing this*/
-    margin: 3em;
+    margin: 1.5em 3em;
 }
 
 .standardFlex img {
@@ -620,9 +620,10 @@ h2 {
     width: 200px;
 }
 
-.yarnFooter {
+.imgFooter {
     width:95%;/* TODO this has bumped the image width over */
     margin: 2em 0 0 0;
     padding: 0 1em 0 1em;
     max-height: 550px;
+    max-width: 978px;
 }
