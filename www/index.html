@@ -3,27 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="HOMS.css" rel="stylesheet" type="text/css" />
+        <!-- <link href="HOMS.css" rel="stylesheet" type="text/css" /> -->
 
         <script type="text/javascript" src="bower_components/angular/angular.js" ></script>
         <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js" ></script>
 
         <script type="text/javascript" src="js/app.js" ></script>
-        <script type="text/javascript" src="js/routes/routes.js" ></script>
         <script type="text/javascript" src="js/navigation/header.controller.js" ></script>
         <script type="text/javascript" src="js/navigation/footer.controller.js" ></script>
+        <script type="text/javascript" src="js/routes/routes.js" ></script>
 
         <title>Heart On My Sleeve</title>
     </head>
     <body ng-app="homs">
         <!--  ui-sref-active="active" adds the active css class to the link - allows us to highlight one that is currently selected. -->
-        <a ui-sref="header" ui-sref-active="active">header</a>
+<!--         <a ui-sref="header" ui-sref-active="active">header</a>
 
-        <a ui-sref="footer" ui-sref-active="active">footer</a>
+        <a ui-sref="footer" ui-sref-active="active">footer</a> -->
 
-        <ui-view></ui-view>
-<!--         <div id="header" />
-        <div id="Main" />
-        <div id="footer" /> -->
+        <!-- <ui-view></ui-view> -->
+        <div id="header" ui-view="header" ></div>
+        <!-- <div id="Main" ui-view="Main" ></div> -->
+        <div id="footer" ui-view="footer" ></div>
     </body>
 </html>

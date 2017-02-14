@@ -1,17 +1,32 @@
 angular.module('homs')
     .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
-            .state('header', {
-                name: 'headers...',
-                url: '/header',
-                templateUrl: 'js/navigation/header.tmpl.html'
+            .state('root', {
+                url: '/',
+                views: {
+                    'header': {
+                        templateUrl: 'js/navigation/header.tmpl.html',
+                        // controller: 'headerController',
+                        // controllerAs: 'vm'
+                    },
+                    'footer': {
+                        templateUrl: 'js/navigation/footer.tmpl.html',
+                        // controller: 'footerController',
+                        // controllerAs: 'vm'
+                    }
+                }
+            });
+            // .state('header', {
+            //     name: 'headers...',
+            //     url: '/header',
+            //     templateUrl: 'js/navigation/header.tmpl.html'
 
-            })
-            .state('footer', {
-                name: 'footers...',
-                url: '/footer',
-                templateUrl: 'js/navigation/footer.tmpl.html'
-            });;
+            // })
+            // .state('footer', {
+            //     name: 'footers...',
+            //     url: '/footer',
+            //     templateUrl: 'js/navigation/footer.tmpl.html'
+            // });;
 
             // // setup an abstract state for the tabs directive
             // .state('header', {
@@ -33,6 +48,5 @@ angular.module('homs')
             // });
 
         // if none of the above states are matched, use this as the fallback
-        // $urlRouterProvider.otherwise('/tab/registration');
-
+        $urlRouterProvider.otherwise('/');
     });
