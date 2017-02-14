@@ -187,7 +187,7 @@ h2 {
     width: 100%;
     margin: 0;
     padding: 0 0.6em;
-    font-size: 0.8em;
+    font-size: 100%;
     white-space: nowrap;
 }
 
@@ -200,7 +200,7 @@ h2 {
 }
 
 .footerFlex p {
-    font-size: 0.8em;
+    font-size: 100%;
     margin: 0;
     padding: 0em 0em 0em 1em;
 }
@@ -598,7 +598,7 @@ h2 {
 }
 
 .thumbnails a div {
-    padding: 0 0 0 50px;
+    padding: 0 0 0 50px; /* TODO is there a smarter way to align two left differently sized fonts?*/
 }
 
 .thumbnailTitle {
