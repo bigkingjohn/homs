@@ -627,3 +627,6 @@ h2 {
     max-height: 550px;
     max-width: 978px;
 }
+.indexMain {
+	max-width: 1300px;
+}
