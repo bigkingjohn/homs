@@ -9,12 +9,21 @@ angular.module('homs')
                         // controller: 'headerController',
                         // controllerAs: 'vm'
                     },
+                    'body': {
+                        templateUrl: 'js/navigation/body.tmpl.html',
+                        // controller: 'bodyController',
+                        // controllerAs: 'vm'
+                    },
                     'footer': {
                         templateUrl: 'js/navigation/footer.tmpl.html',
                         // controller: 'footerController',
                         // controllerAs: 'vm'
                     }
                 }
+            })
+            .state('body.project', {
+                url: '/project',
+                templateUrl: 'js/project/project.tmpl.html',
             });
             // .state('header', {
             //     name: 'headers...',
