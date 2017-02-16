@@ -3,7 +3,7 @@
 
     angular
         .module('homs')
-        .controller(headerController, 'headerController');
+        .controller('headerController', headerController);
 
     headerController.$inject = [];
 
@@ -13,6 +13,7 @@
         // Functions
 
         // Variables
+        vm.something = "blah";
 
         // Constructor
         activate();

@@ -10,6 +10,7 @@
 
         <script type="text/javascript" src="js/app.js" ></script>
         <script type="text/javascript" src="js/navigation/header.controller.js" ></script>
+        <script type="text/javascript" src="js/navigation/header.directive.js" ></script>
         <script type="text/javascript" src="js/navigation/footer.controller.js" ></script>
         <script type="text/javascript" src="js/project/project.controller.js" ></script>
         <script type="text/javascript" src="js/routes/routes.js" ></script>
@@ -17,14 +18,15 @@
         <title>Heart On My Sleeve</title>
     </head>
     <body ng-app="homs">
+        <homs-header test="blahnik"></homs-header>
         <!--  ui-sref-active="active" adds the active css class to the link - allows us to highlight one that is currently selected. -->
 <!--         <a ui-sref="header" ui-sref-active="active">header</a>
 
         <a ui-sref="footer" ui-sref-active="active">footer</a> -->
 
+        <!-- <div id="header" ui-view="header" ></div> -->
+        <!-- <div id="body" ui-view="body"></div> -->
         <!-- <ui-view></ui-view> -->
-        <div id="header" ui-view="header" ></div>
-        <div id="body" ui-view="body"></div>
-        <div id="footer" ui-view="footer" ></div>
+<!--         <div id="footer" ui-view="footer" ></div> -->
     </body>
 </html>

@@ -12,5 +12,5 @@
 //     'use strict';
 
 //     angular
-//         .module('homs', []);
+//         .module('homs');
 // })();
