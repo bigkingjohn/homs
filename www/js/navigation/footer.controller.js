@@ -3,7 +3,7 @@
 
     angular
         .module('homs')
-        .controller(footerController, 'footerController');
+        .controller('footerController', footerController);
 
     footerController.$inject = [];
 

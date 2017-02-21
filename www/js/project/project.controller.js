@@ -3,7 +3,7 @@
 
     angular
         .module('homs')
-        .controller(projectController, 'projectController');
+        .controller('projectController', projectController);
 
     projectController.$inject = [];
 
@@ -18,7 +18,7 @@
         activate();
 
         function activate() {
-            console.log("activating project");
+
         }
     }
 })();

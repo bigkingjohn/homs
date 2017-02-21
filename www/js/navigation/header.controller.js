@@ -13,13 +13,12 @@
         // Functions
 
         // Variables
-        vm.something = "blah";
 
         // Constructor
         activate();
 
         function activate() {
-            console.log("activating header");
+
         }
     }
 })();
