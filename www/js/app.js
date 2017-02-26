@@ -10,7 +10,14 @@
 
 // (function () {
 //     'use strict';
-
+//
 //     angular
-//         .module('homs');
+//         .module('homs')
+//         <>.();
+//
+//     <>.$inject = [];
+//
+//     function <> () {
+//
+//     }
 // })();
