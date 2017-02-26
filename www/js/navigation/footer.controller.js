@@ -5,20 +5,23 @@
         .module('homs')
         .controller('footerController', footerController);
 
-    footerController.$inject = [];
+    footerController.$inject = ['navigationService'];
 
-    function footerController() {
+    function footerController(navigationService) {
         var vm = this;
 
         // Functions
 
         // Variables
+        vm.footerBar = [];
+        vm.socialButtons = [];
 
         // Constructor
         activate();
 
         function activate() {
-            console.log("activating footer");
+            vm.footerBar = navigationService.pages;
+            vm.socialButtons = navigationService.socialButtons;
         }
     }
 })();
