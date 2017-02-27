@@ -2,8 +2,8 @@
     <div class="footerBar">
         <span ng-repeat="page in vm.footerBar" ng-click="page.goto()" >{{page.title}}</span>
     </div>
-    <div class="footerFlex">
-        <p>Find our sweaters online <strong>#heartonmysleeveknits</strong></p>
+    <p>Find our sweaters online <strong>#heartonmysleeveknits</strong></p>
+    <div class="socialButtons">
         <a ng-repeat="button in vm.socialButtons" href="{{button.url}}" target="new">
             <img src="{{button.image}}" alt="" class="footerSocial" />
         </a>
