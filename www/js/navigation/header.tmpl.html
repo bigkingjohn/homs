@@ -1,7 +1,15 @@
 <div class="header">
     <img ui-view="project" src="images/LOGO-text.png" alt=""/>
     <div class="navbar">
-        <span ng-repeat="page in vm.navBar" ng-click="page.goto()" >{{page.title}}</span>
+        <span ng-repeat="page in vm.navPages" ng-click="page.goto()" >{{page.title}}</span>
     </div>
-    <div class="navButton">☰</div>
+    <div class="navNarrow">
+        <div class="navMenuToggle" ng-click="vm.toggleMenu()">☰</div>
+        <div class="navMenu" ng-class="!vm.showMenu ? 'navMenuHidden' : ''" ng-click="vm.test()">
+            <!-- <div class="navButtons" ng-show="vm.showMenu"> -->
+            <div class="navButtons">
+                <div ng-repeat="page in vm.navPages" ng-click="page.goto()" >{{page.title}}</div>
+            </div>
+        </div>
+    </div>
 </div>

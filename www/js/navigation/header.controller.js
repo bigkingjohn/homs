@@ -11,15 +11,27 @@
         var vm = this;
 
         // Functions
+        vm.toggleMenu = toggleMenu;
+        vm.test = test;
 
         // Variables
-        vm.navBar = [];
+        vm.navPages = [];
+        vm.showMenu = false;
 
         // Constructor
         activate();
 
         function activate() {
-            vm.navBar = navigationService.pages;
+            vm.navPages = navigationService.pages;
+        }
+
+        function toggleMenu() {
+            vm.showMenu = !vm.showMenu;
+        }
+
+        function test() {
+            console.log("testing123");
+            vm.showMenu = false;
         }
     }
 })();
