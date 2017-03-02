@@ -64,6 +64,11 @@ body {
 }
 
 .navButtons {
+    /*Centre the menu vertically on the screen - may not be the desired affect, especially if we add an image to the top of the menu*/
+    /*feels like there should be a better solution as this is old school.*/
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
     /*background-color: blue;*/
     display: inline-block;
     /*padding: 0.5em;*/
