@@ -11,8 +11,8 @@
         var vm = this;
 
         // Functions
-        vm.toggleMenu = toggleMenu;
-        vm.test = test;
+        vm.slideMenuIn = slideMenuIn;
+        vm.slideMenuOut = slideMenuOut;
 
         // Variables
         vm.navPages = [];
@@ -25,12 +25,11 @@
             vm.navPages = navigationService.pages;
         }
 
-        function toggleMenu() {
-            vm.showMenu = !vm.showMenu;
+        function slideMenuIn() {
+            vm.showMenu = true;
         }
 
-        function test() {
-            console.log("testing123");
+        function slideMenuOut() {
             vm.showMenu = false;
         }
     }

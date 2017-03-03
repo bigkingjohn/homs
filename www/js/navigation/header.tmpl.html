@@ -4,9 +4,8 @@
         <span ng-repeat="page in vm.navPages" ng-click="page.goto()" >{{page.title}}</span>
     </div>
     <div class="navNarrow">
-        <div class="navMenuToggle" ng-click="vm.toggleMenu()">☰</div>
-        <div class="navMenu" ng-class="!vm.showMenu ? 'navMenuHidden' : ''" ng-click="vm.test()">
-            <!-- <div class="navButtons" ng-show="vm.showMenu"> -->
+        <div class="navMenuToggle" ng-click="vm.slideMenuIn()">☰</div>
+        <div class="navMenu" ng-class="!vm.showMenu ? 'navMenuHidden' : ''" ng-click="vm.slideMenuOut()">
             <div class="navButtons">
                 <div ng-repeat="page in vm.navPages" ng-click="page.goto()" >{{page.title}}</div>
             </div>
