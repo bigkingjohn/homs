@@ -276,3 +276,12 @@ a {
     width: 100%;
     margin: 0em 1em;
 }
+
+.malariaIntro {
+    flex-wrap: nowrap !important;
+    align-items: center;
+}
+
+.malariaIntro img {
+    padding: 0 1em 0 0;
+}
