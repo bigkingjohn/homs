@@ -57,26 +57,26 @@
                 designer: "by Joji Locatelli",
             },
             {
-                url: "http://heartonmysleeveknits.com/pattern-heartstring.html"
-                image: "images/HOMS-heartstring-tmb-c.jpg"
+                url: "http://heartonmysleeveknits.com/pattern-heartstring.html",
+                image: "images/HOMS-heartstring-tmb-c.jpg",
                 name: "Heartstring",
                 designer: "by Joji Locatelli",
             },
             {
-                url: "http://heartonmysleeveknits.com/pattern-tenderheart.html"
-                image: "images/HOMS-tenderheart-tmb-a.jpg"
+                url: "http://heartonmysleeveknits.com/pattern-tenderheart.html",
+                image: "images/HOMS-tenderheart-tmb-a.jpg",
                 name: "Tenderheart",
                 designer: "by Alexa Ludeman",
             },
             {
-                url: "http://heartonmysleeveknits.com/pattern-tenderheart.html"
-                image: "images/HOMS-tenderheart-tmb-e.jpg"
+                url: "http://heartonmysleeveknits.com/pattern-tenderheart.html",
+                image: "images/HOMS-tenderheart-tmb-e.jpg",
                 name: "Tenderheart",
                 designer: "by Alexa Ludeman",
             },
             {
-                url: "http://heartonmysleeveknits.com/pattern-wholehearted.html"
-                image: "images/HOMS-wholehearted-tmb-a.jpg"
+                url: "http://heartonmysleeveknits.com/pattern-wholehearted.html",
+                image: "images/HOMS-wholehearted-tmb-a.jpg",
                 name: "Wholehearted",
                 designer: "by Bristol Ivy",
             },
