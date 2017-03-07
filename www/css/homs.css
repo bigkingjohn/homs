@@ -192,7 +192,7 @@ a {
 @media all and (min-width: 28em) {
     .mainPurchaseBox {
         flex-wrap: nowrap !important;
-        align-items: center;
+        align-items: flex-start;
         padding: 1em;
     }
 
@@ -203,6 +203,18 @@ a {
 
     .purchaseBoxImage img {
         margin: 0;
+    }
+
+    .mainPurchaseBox .p0 {
+        margin: 0 0 1em 0;
+    }
+
+    .mainPurchaseBox .pn {
+        margin: 1em 0 0 0;
+    }
+
+    .malariaIntro {
+        flex-wrap: nowrap !important;
     }
 }
 
@@ -278,10 +290,11 @@ a {
 }
 
 .malariaIntro {
-    flex-wrap: nowrap !important;
+    /*flex-wrap: nowrap !important;*/
     align-items: center;
+    justify-content: center;
 }
 
 .malariaIntro img {
-    padding: 0 1em 0 0;
+    padding: 0 0 0 1em;
 }
