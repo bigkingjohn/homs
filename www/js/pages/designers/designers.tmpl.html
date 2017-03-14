@@ -1,9 +1,18 @@
 <div class="flexContainer">
     <div class="flexChild">
         <h4>We have been inspired to collaborate and contribute both as knit designers and as people. Brought together by the knit community, we have made each of these designs with care in Canada, the USA, and the UK and Argentina.</h4>
-        <br>
         <h4>Why are you wearing your heart on your sleeve? </h4>
         <p>Each designer has donated their design to this ebook. Tin Can Knits conceived and coordinated the project and ebook.</p>
    </div>
-   <div>DESIGNERS</div>
+   <div class="flexContainer flexMiddle">
+        <designer-bio ng-repeat="designer in vm.designers" image-url="designer.imageUrl" image-style="designer.style" name="designer.name" bio="designer.bio" homepage-url="designer.homepageUrl" homepage-title="designer.homepageTitle"></designer-bio>
+        <div class="designerBio">
+            <img class="bioStandard" src="{{ vm.motifDesigners.imageUrl }}"></img>
+            <h3>{{ vm.motifDesigners.title }}</h3>
+            <p class="bioStandard">{{ vm.motifDesigners.text }}</p>
+            <div ng-repeat="designer in vm.motifDesigners.designers">
+                <a href="{{ designer.url }}">{{ designer.name }}</a>
+            </div>
+        </div>
+   </div>
 </div>

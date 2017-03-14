@@ -216,6 +216,10 @@ a {
     .malariaIntro {
         flex-wrap: nowrap !important;
     }
+
+    .bioWide {
+        width: 360px !important;
+    }
 }
 
 @media all and (min-width: 35em) {
@@ -284,6 +288,10 @@ a {
     flex-wrap: wrap;
 }
 
+.flexMiddle {
+    justify-content: center;
+}
+
 .flexChild {
     width: 100%;
     margin: 0em 1em;
@@ -297,4 +305,24 @@ a {
 
 .malariaIntro img {
     padding: 0 0 0 1em;
+}
+
+.designerBio {
+    margin: 1em 0.5em;
+}
+
+.designerBio p {
+    white-space: pre-line;
+}
+
+.designerBio img {
+    border-radius: 15px;
+}
+
+.bioStandard {
+    width: 240px;
+}
+
+.bioWide {
+    width: 280px;
 }
