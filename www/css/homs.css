@@ -314,13 +314,16 @@ a {
     justify-content: center;
 }
 
+.flexMiddleMiddle {
+    justify-content: center;
+    align-items: center;
+}
+
 .flexChild {
-    /*width: 100%;*/
     margin: 0em 1em;
 }
 
 .malariaIntro {
-    /*flex-wrap: nowrap !important;*/
     align-items: center;
     justify-content: center;
 }
@@ -347,4 +350,13 @@ a {
 
 .bioWide {
     width: 280px;
+}
+
+.yarnSource {
+    margin: 1em;
+}
+
+.yarnSource img {
+    width: 240px;
+
 }
