@@ -1,4 +1,4 @@
-<div class="flexContainer standardFlex">
+<div class="flexContainer">
     <div class="flexChild">
         <h4>Nine knit designers have come together to create this project and share it with you. We each started with a basic sleeve and body pattern, then designed a unique yoke for your knitting pleasure!</h4>
         <p>Pick your favourite, or make a few; each design is sized from baby to big for sweaters for the whole family.</p>
@@ -6,5 +6,7 @@
         <p>And as you can see, each design is sized from baby to big; so you can knit for grandbaby or for grandma!</p>
     </div>
     <purchase-box></purchase-box>
+    <div class="flexContainer flexMiddle">
+        <pattern-thumb ng-repeat="thumb in vm.patterns" url="thumb.url" image-url="thumb.imageUrl" name="thumb.name" designer="thumb.designer"></pattern-thumb>
+    </div>
 </div>
-<div>pattern thumbs</div>

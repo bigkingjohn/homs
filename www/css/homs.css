@@ -360,3 +360,30 @@ a {
     width: 240px;
 
 }
+
+.thumbnails {
+    margin: 1em 0.5em;
+}
+
+.thumbnails img {
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+}
+
+.thumbnails a div {
+    text-align: center;
+    max-width: 200px;
+    /*padding: 0 0 0 50px;*/ /* TODO is there a smarter way to align two left differently sized fonts?*/
+}
+
+.thumbnailTitle {
+    text-transform: uppercase;
+    color: black;
+}
+
+.thumbnailSubTitle {
+    font-weight: normal;
+    color: black;
+    font-size: 90%;
+}
