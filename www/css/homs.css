@@ -175,6 +175,10 @@ a {
     .footerBar {
         display: none;
     }
+
+    .flexDuoImgText {
+        flex-wrap: wrap;
+    }
 }
 
 @media all and (max-width: 35em) {
@@ -226,6 +230,14 @@ a {
     .footer p {
         margin: 0.6em;
         font-size: 90%;
+    }
+
+    .flexDuoImgText {
+        flex-wrap: nowrap;
+    }
+
+    .flexDuoImgText div {
+        margin: 0 1em;
     }
 }
 
@@ -288,12 +300,22 @@ a {
     flex-wrap: wrap;
 }
 
+.flexDuoImgText {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+.flexDuoImgText img {
+    height: 200px;
+}
+
 .flexMiddle {
     justify-content: center;
 }
 
 .flexChild {
-    width: 100%;
+    /*width: 100%;*/
     margin: 0em 1em;
 }
 
