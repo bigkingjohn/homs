@@ -1,0 +1,4 @@
+<div class="carousel">
+    <img class="mainImg" ng-repeat="item in vm.items" ng-src="{{item}}" ng-show="vm.showItem($index)" ng-click="vm.nextItem()"/>
+    <img class="subImg" ng-repeat="item in vm.items" ng-src="{{item}}" ng-show="vm.showItem($index)" ng-click="vm.nextItem()"/>
+</div>

@@ -374,7 +374,6 @@ a {
 .thumbnails a div {
     text-align: center;
     max-width: 200px;
-    /*padding: 0 0 0 50px;*/ /* TODO is there a smarter way to align two left differently sized fonts?*/
 }
 
 .thumbnailTitle {
@@ -386,4 +385,16 @@ a {
     font-weight: normal;
     color: black;
     font-size: 90%;
+}
+
+.carousel {
+
+}
+
+.carousel img.mainImg {
+  width: 100%;
+}
+
+.carousel img.subImg {
+  width: 20%;
 }
