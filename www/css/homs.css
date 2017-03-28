@@ -387,7 +387,7 @@ a {
     font-size: 90%;
 }
 
-.carousel {
+/*.carousel {
 
 }
 
@@ -397,4 +397,8 @@ a {
 
 .carousel img.subImg {
   width: 20%;
+}*/
+
+.mainImg {
+  width: 100%;
 }
