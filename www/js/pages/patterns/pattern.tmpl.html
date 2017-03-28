@@ -1,1 +1,91 @@
-PATTERNS
+<div>
+    <slick settings="vm.slickConfig">
+        <img class="mainImg" ng-repeat="photo in vm.selectedPattern.photos" src="{{photo}}"/>
+    </slick>
+    <div><!-- <div class="rightPanel"> -->
+        <h1 class="patternTitle">{{ vm.selectedPattern.title }}</h1>
+        <h2 class="designerName">{{ vm.selectedPattern.designer }}</h2>
+        <p>{{ vm.selectedPattern.blurb }}</p>
+    </div>
+    <!-- <p>Get the ebook and cast on now! </p> TODO do we need this text?-->
+    <purchase-box></purchase-box>
+    <div class="ravButton">
+        <a href="{{ vm.selectedPattern.ravelryLink }}" target="new">
+            <!-- <img src="{{ vm.selectedPattern.ravelryGif }}" style="border: none;" /> TODO REMOVE INLINE STYLE!-->
+            <img src="{{ vm.selectedPattern.ravelryGif }}" />
+        </a>
+        <span>&lt; browse {{ vm.selectedPattern.title }} sweaters on Ravelry</span>
+    </div>
+    <div>
+        <div class="flexContainer">
+            <p ng-repeat="info in vm.selectedPattern.info" ng-click="vm.showInfo(info)" ng-class="{ 'selectedInfo': vm.isInfoSelected(info) }">{{ info.title }}</p>
+        </div>
+        <div>
+            {{ vm.selectedPatternInfo.content }}
+        </div>
+    </div>
+    <div>
+        <h2 class="designerName">Other designs from Heart On My Sleeve:</h2>
+        <div class="morePatternsbox">
+            <img ng-repeat="pattern in vm.patternLinks" src="{{ pattern.imageUrl }}" ng-click="vm.goToPattern(pattern.name)" ng-hide="vm.hideLink(pattern.name)"/>
+        </div>
+    </div>
+</div>
+
+<!--         </div>
+        <div class="bottomPanel">
+            <div class="tabNavBar">
+                <div id="tabHeaderSizing" onclick="showTab('Sizing')">sizing</div>
+                <div id="tabHeaderMaterials" onclick="showTab('Materials')">yarn &amp; gauge</div>
+                <div id="tabHeaderNeedles" onclick="showTab('Needles')">needles</div>
+                <div id="tabHeaderTutorials" onclick="showTab('Tutorials')">useful tutorials</div>
+            </div>
+
+            <div class="tabContent">
+                <div id="tabSizing" class="tabDataHidden">
+          <p><strong>The pattern includes 7 child sizes and 8 adult sizes:</strong> <br>
+          0-6 mo (6-12 mo, 1-2 yrs, 2-4 yrs, 4-6 yrs, 6-8 yrs, 8-10 yrs, <strong>XS, S, M, L, XL, XXL, 3XL, 4XL</strong>)</p>
+          <p><strong>a. finished chest / bust:</strong> 17.5 (19.5, 22, 24, 26, 28.5, 30.5, <strong>32.5, 35, 37, 41.5, 46, 50, 54.5, 59</strong>)&quot;
+                   <br><strong>b. hem to underarm:</strong> 6.5 (7.5, 9, 11, 12, 13, 14, <strong>15, 16, 16.5, 17, 17.5, 18, 18, 18</strong>)&quot;
+                   <br><strong>c. 3/4 length sleeve:</strong> 3 (4, 5, 5.5, 6, 7, 9, <strong>11, 11.5, 12, 12.5, 13, 13.5, 13.5, 13.5</strong>)&quot;
+                   <br><strong>d. long sleeve:</strong> 6 (7, 9, 11, 12, 13, 15, <strong>17, 18, 19, 19, 20, 20, 21, 21</strong>)&quot;
+                   <br><strong>e. top sleeve:</strong> 6.5 (7, 7.75, 8, 8.75, 9, 9.5, <strong>10.5, 11.75, 12.25, 14.25, 15, 16.25, 17.5, 19</strong>)&quot;
+            <br><em>Note: The pattern includes optional waist shaping for adult sizes, which decreases to 3" less than the total bust measurement for each size.</em></p>
+                   <img src="images/HOMS-schematic.jpg" width="" height="" alt=""/> </div>
+                <div id="tabMaterials" class="tabDataHidden">
+          <p><strong>gauge:</strong> 22 sts &amp; 30 rounds / 4” in stockinette using larger needles</p>
+          <p><strong>yarn</strong>: DK weight yarn
+          <br><strong>MC:</strong> 350 (400, 500, 650, 800, 900, <strong>1000, 1100, 1200, 1300, 1400, 1600, 1800, 2000, 2200</strong>) yds
+          <br><strong>CC:</strong> 150 (170, 200, 250, 300, 350, 370, <strong>400, 450, 450, 500, 550, 650, 750, 800</strong>) maximum total yds*
+                    <br>*Note: the CC yardage may be comprised of a number of different CCs depending on your design intent within the colourwork section, thus the total yardage in CC that you will require will vary.</p>
+                    <p>Lady sweater is knit <a href="http://www.ravelry.com/yarns/library/tanis-fiber-arts-purewash-dk" target="new">Tanis Fiber Arts Purewash DK</a> in ‘ravine ‘with ‘orchid’ and ‘sand’.</p>
+                    <p>Kid sweater knit in <a href="http://www.ravelry.com/yarns/library/tanis-fiber-arts-purewash-dk" target="new">Tanis Fiber Arts Purewash DK</a> in ‘sand’ and ‘stone’ with ‘chris grey’, ‘frost’, ‘natural’, ‘orange blossom’, ‘orchid’, ‘peacock’ ‘poppy’, ‘ravine’, ‘royal flush’ and ‘saffron’, ‘seabreeze’.</p>
+                    <p>Toddler sweater knit in <a href="http://www.ravelry.com/yarns/library/tanis-fiber-arts-purewash-dk" target="new">Tanis Fiber Arts Purewash DK</a> in ‘chris grey’ and ‘frost’ with ‘peacock’, ‘ravine’, and ‘sea breeze’.</p>
+                    <p>Dude sweater is knit in <a href="http://www.ravelry.com/yarns/library/tanis-fiber-arts-purewash-worsted" target="new">Tanis Fiber Arts Purewash Worsted</a> in ‘graphite’ with ‘OOAK speckled’, ‘chris grey’, ‘sand’, ‘stone’, ‘chestnut’, ‘caramel’, ‘gold’, ‘chartreuse’, ‘mint’, ‘hunter’, ‘mallard’, and ‘olive’. Details of how Tanis knit this sweater in a heavier weight are <a href="http://www.tanisfiberarts.com/blog/2017/2/chris-worsted-weight-crazyheart" target="new">on her blog</a>.</p>
+                </div>
+                <div id="tabNeedles" class="tabDataHidden">
+                    <p><strong>suggested needles:</strong> US #4 / 3.5mm and US #6 / 4mm <em>(or as required to meet gauge)</em></p>
+                    <p><strong>for sizes 0 - 4 years:</strong> 16” circulars and DPNs in each size*
+                    <br><strong>for sizes 4 yrs - XS:</strong> 16” circulars, 24” circulars, and DPNs in each size*
+                    <br><strong>for sizes S - 4XL:</strong> 16” circulars, 32” circulars, and DPNs in each size*
+                    <br>* Alternatively you can use the <a href="https://blog.tincanknits.com/2013/10/03/magic-loop/" target="new">magic loop technique</a> to knit smaller diameter tubes on a long circular needle</p>
+                    <p><strong>notions:</strong> darning needle, stitch markers</p>
+                </div>
+                <div id="tabTutorials" class="tabDataHidden">
+                    <ul>
+                       <li><a href="http://blog.tincanknits.com/2013/08/17/gauge/" title="Gauge in Knitting" target="new">Gauge in knitting</a></li>
+                       <li><a href="http://blog.tincanknits.com/2012/10/21/bottom-up-sweater/" target="new" title="How to choose your sweater size">How to choose your sweater size</a></li>
+                       <li><a href="http://blog.tincanknits.com/2013/10/03/kitchener-stitch/" target="new" title="How to work Kitchener Stitch">How to work the kitchener stitch</a></li>
+                       <li><a href="http://blog.tincanknits.com/2015/05/26/how-to-knit-fair-isle/" target="new" title="How to Knit Fair Isle">How to work stranded colourwork</a></li>
+                       <li><a href="http://blog.tincanknits.com/2014/09/01/choosing-a-palette-for-colourwork/" target="new" title="Choosing a palette for colourwork">Choosing a palette for colourwork</a></li>
+                       <li><a href="https://blog.tincanknits.com/2016/01/28/collect-colour-combos/" target="new" title="Collect Colour Combos">Excellent colour combos for colourwork</a></li>
+                       <li><a href="http://blog.tincanknits.com/2014/06/06/how-to-read-a-knitting-chart/" target="new" title="How to Read a Knitting Chart">How to read a knitting chart</a></li>
+                       <li><a href="http://blog.tincanknits.com/2015/10/15/how-to-block-a-hand-knit-sweater/" target="new" title="How to Block a Sweater">How to block a sweater</a>
+                       <li><a href="http://www.tanisfiberarts.com/blog/2017/2/chris-worsted-weight-crazyheart" target="new" title="How Tanis knit Crazyheart in a worsted weight yarn">How Tanis knit Crazyheart in a worsted weight yarn</a></li>
+                   </ul>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
+

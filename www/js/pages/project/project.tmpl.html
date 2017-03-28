@@ -1,5 +1,5 @@
 
-<slick settings="vm.slickConfig">
+<slick settings="vm.slickConfig" ng-if="vm.showCarousel">
     <img class="mainImg" ng-repeat="photo in vm.photos" src="{{photo}}"/>
 </slick>
 <div class="indexText flexContainer">

@@ -32,27 +32,15 @@ angular
                 controller: 'againstmalariaController',
                 controllerAs: 'vm'
             })
-            .state('blog', {
-                url: '/blog',
-                templateUrl: 'js/pages/blog/blog.tmpl.html',
-                controller: 'blogController',
-                controllerAs: 'vm'
-            })
             .state('contact', {
                 url: '/contact',
                 templateUrl: 'js/pages/contact/contact.tmpl.html',
                 controller: 'contactController',
                 controllerAs: 'vm'
             })
-            .state('onravelry', {
-                url: '/onravelry',
-                templateUrl: 'js/pages/onravelry/onravelry.tmpl.html',
-                controller: 'onravelryController',
-                controllerAs: 'vm'
-            })
             .state('pattern', {
                 url: '/pattern',
-                templateUrl: 'js/pages/pattern/pattern.tmpl.html',
+                templateUrl: 'js/pages/patterns/pattern.tmpl.html',
                 controller: 'patternController',
                 controllerAs: 'vm'
             });
