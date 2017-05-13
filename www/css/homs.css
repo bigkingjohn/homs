@@ -255,8 +255,10 @@ a {
   width: 400px;
 }
 
-.selectedInfo {
-    color: red;
+.ravButton {
+    display: flex;
+    padding: 1em;
+    align-items: center;
 }
 
 .patternTab {
@@ -271,16 +273,37 @@ a {
 .patternTabHeader p {
     border: solid lightgrey 2px;
     margin: 0;
+    font-size: 0.9em;
+}
+
+.selectedInfo {
+    background: white;
+    font-weight: bold;
 }
 
 .patternTabContent {
-    border: solid lightgrey 2px;
+    border-right: solid lightgrey 2px;
+    border-left: solid lightgrey 2px;
+    border-bottom: solid lightgrey 2px;
 }
 
-.ravButton {
-    display: flex;
-    padding: 1em;
-    align-items: center;
+.patternTabContent div {
+    padding: 0.25em;
+}
+
+.patternTabContent p {
+    margin: 0;
+    padding: 0.2em 0;
+    font-size: 0.8em;
+}
+
+.patternTabContent ul {
+    padding: 0.2em 1.1em;
+    margin: 0;
+}
+
+.tutorialList li {
+    padding: 0.3em 0;
 }
 
 .patternThumbs {
