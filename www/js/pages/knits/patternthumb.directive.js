@@ -17,9 +17,13 @@
                 imageUrl: '=',
                 name: '=',
                 designer: '=',
+                onClick: '&',
             },
             link: linkFunc,
             templateUrl: 'js/pages/knits/patternthumb.tmpl.html',
+            // controller: 'patternThumbController',
+            // controllerAs: 'vm',
+            // bindToController: true,
         }
 
         return directive;

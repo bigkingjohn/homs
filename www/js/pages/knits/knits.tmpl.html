@@ -7,6 +7,6 @@
     </div>
     <purchase-box></purchase-box>
     <div class="flexContainer flexMiddle">
-        <pattern-thumb ng-repeat="thumb in vm.patterns" url="thumb.url" image-url="thumb.imageUrl" name="thumb.name" designer="thumb.designer"></pattern-thumb>
+        <pattern-thumb ng-repeat="thumb in vm.patterns" url="thumb.url" image-url="thumb.imageUrl" name="thumb.name" designer="thumb.designer" on-click="vm.goToPattern"></pattern-thumb>
     </div>
 </div>

@@ -39,7 +39,7 @@ angular
                 controllerAs: 'vm'
             })
             .state('pattern', {
-                url: '/pattern',
+                url: '/pattern/:name',
                 templateUrl: 'js/pages/patterns/pattern.tmpl.html',
                 controller: 'patternController',
                 controllerAs: 'vm'

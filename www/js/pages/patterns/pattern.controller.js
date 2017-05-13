@@ -5,9 +5,9 @@
         .module('homs')
         .controller('patternController', patternController);
 
-    patternController.$inject = [];
+    patternController.$inject = ['$stateParams'];
 
-    function patternController() {
+    function patternController($stateParams) {
         var vm = this;
 
         // Functions
@@ -38,10 +38,13 @@
                 ],
                 ravelryLink: "http://www.ravelry.com/badges/redirect?p=crazyheart",
                 ravelryGif: "http://api.ravelry.com/badges/projects?p=crazyheart&amp;t=.gif",
+
                 info: [
                     {
                         title: "sizing",
-                        content: "sizing...",
+                        content: {
+
+                        },
                     },
                     {
                         title: "yarn  guage",
@@ -122,6 +125,7 @@
             vm.selectedPattern = vm.patterns[0];
             vm.selectedPatternInfo = vm.selectedPattern.info[0];
             // vm.slickConfig.enabled = true;
+            console.log("params: ", $stateParams)
         }
 
         function showInfo(patternInfo) {

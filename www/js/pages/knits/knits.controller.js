@@ -11,6 +11,7 @@
         var vm = this;
 
         // Functions
+        vm.goToPattern = goToPattern;
 
         // Variables
         vm.patterns = [
@@ -117,6 +118,10 @@
 
         function activate() {
 
+        }
+
+        function goToPattern(name) {
+            console.log("kgo to pattern ", name);
         }
     }
 })();
