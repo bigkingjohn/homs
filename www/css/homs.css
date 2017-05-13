@@ -365,7 +365,7 @@ a {
 
 @media all and (max-width: 28em) {
     .patternTabHeader p {
-        padding: 0.25em;
+        padding: 0.25em 0.35em;
     }
 
     .patternThumbs img {
