@@ -5,9 +5,9 @@
         .module('homs')
         .controller('yarnsController', yarnsController);
 
-    yarnsController.$inject = [];
+    yarnsController.$inject = ['$anchorScroll'];
 
-    function yarnsController() {
+    function yarnsController($anchorScroll) {
         var vm = this;
 
         // Functions
@@ -72,7 +72,7 @@
         activate();
 
         function activate() {
-
+            $anchorScroll();
         }
     }
 })();

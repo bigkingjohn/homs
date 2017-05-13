@@ -5,9 +5,9 @@
         .module('homs')
         .controller('againstmalariaController', againstmalariaController);
 
-    againstmalariaController.$inject = [];
+    againstmalariaController.$inject = ['$anchorScroll'];
 
-    function againstmalariaController() {
+    function againstmalariaController($anchorScroll) {
         var vm = this;
 
         // Functions
@@ -18,7 +18,7 @@
         activate();
 
         function activate() {
-
+            $anchorScroll();
         }
     }
 })();

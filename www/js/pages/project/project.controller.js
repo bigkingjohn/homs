@@ -5,9 +5,9 @@
         .module('homs')
         .controller('projectController', projectController);
 
-    projectController.$inject = [];
+    projectController.$inject = ['$anchorScroll'];
 
-    function projectController() {
+    function projectController($anchorScroll) {
         var vm = this;
 
         // Functions
@@ -48,6 +48,8 @@
         // Constructor
         activate();
 
-        function activate() {}
+        function activate() {
+            $anchorScroll();
+        }
     }
 })();

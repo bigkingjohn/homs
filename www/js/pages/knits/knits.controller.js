@@ -5,9 +5,9 @@
         .module('homs')
         .controller('knitsController', knitsController);
 
-    knitsController.$inject = ['$state'];
+    knitsController.$inject = ['$state', '$anchorScroll'];
 
-    function knitsController($state) {
+    function knitsController($state, $anchorScroll) {
         var vm = this;
 
         // Functions
@@ -117,7 +117,7 @@
         activate();
 
         function activate() {
-
+            $anchorScroll();
         }
 
         function goToPattern(pattern) {

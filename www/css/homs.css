@@ -56,7 +56,6 @@ a {
 .navMenuToggle {
     padding: 0.2em 0.5em;
     font-weight: bold;
-    font-size: 200%;
     color: grey;
     white-space: nowrap;
 }
@@ -72,26 +71,35 @@ a {
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
+    /*background-color: rgb(0,0,0); /* Black fallback color */*/
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
     display: flex;
     display: -webkit-flex;
+    /*align-items: center*/
+}
+
+.navBackground {
+    background: white;
+    border-right: solid lightgrey 1px;
+    height: 100%;
+    display: flex;
     align-items: center
 }
 
 .navButtons {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
 
 .navButtons div {
-    font-size: 80%;
     font-weight: bold;
-    padding: 0.4em 1em;
-    margin: 0.2em;
+    font-size: 1.2em;
+    padding: 0.6em 0.5em;
+    margin: 0.1em 0.25em;
     background-color: lightgrey;
-    border-radius: 2em;
+    border-radius: 0.2em;
     text-align: center;
     white-space: nowrap;
 }

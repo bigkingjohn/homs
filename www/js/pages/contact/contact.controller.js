@@ -5,9 +5,9 @@
         .module('homs')
         .controller('contactController', contactController);
 
-    contactController.$inject = [];
+    contactController.$inject = ['$anchorScroll'];
 
-    function contactController() {
+    function contactController($anchorScroll) {
         var vm = this;
 
         // Functions
@@ -18,7 +18,7 @@
         activate();
 
         function activate() {
-
+            $anchorScroll();
         }
     }
 })();

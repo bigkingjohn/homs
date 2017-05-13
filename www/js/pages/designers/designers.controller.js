@@ -5,9 +5,9 @@
         .module('homs')
         .controller('designersController', designersController);
 
-    designersController.$inject = [];
+    designersController.$inject = ['$anchorScroll'];
 
-    function designersController() {
+    function designersController($anchorScroll) {
         var vm = this;
 
         // Functions
@@ -108,7 +108,7 @@
         activate();
 
         function activate() {
-
+            $anchorScroll();
         }
     }
 })();
