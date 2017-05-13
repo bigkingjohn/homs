@@ -13,7 +13,6 @@
         // Functions
 
         // Variables
-        vm.showCarousel = false;
         vm.photos = [
             // "images/HOMS-details-01.jpg",
             "images/HOMS-heartstring-05dw.jpg",
@@ -49,9 +48,6 @@
         // Constructor
         activate();
 
-        function activate() {
-            // If we dont use this in an ng-if in the slick directive, the images sometimes have a height of 1px or something
-            vm.showCarousel = true;
-        }
+        function activate() {}
     }
 })();

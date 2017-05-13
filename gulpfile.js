@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var liveServer = require('live-server');
 
-gulp.task('serve-dev', [], function () {
+gulp.task('serve', [], function () {
     var params = {
         port: 8080,
         host: "localhost",
