@@ -5,9 +5,9 @@
         .module('homs')
         .controller('patternController', patternController);
 
-    patternController.$inject = ['$stateParams', 'patternService'];
+    patternController.$inject = ['$state', '$stateParams', '$anchorScroll', 'patternService'];
 
-    function patternController($stateParams, patternService) {
+    function patternController($state, $stateParams, $anchorScroll, patternService) {
         var vm = this;
 
         // Functions
@@ -52,10 +52,17 @@
         activate();
 
         function activate() {
+            console.log("activating");
             vm.selectedTab = "sizing";
             vm.patternLinks = patternService.patternLinks;
-            vm.selectedPattern = patternService.getPattern($stateParams.name);
+            vm.selectedPattern = patternService.getPattern($stateParams.name.toLowerCase());
+
+            if (!vm.selectedPattern) {
+                $state.go('knits');
+            }
+
             vm.slickConfig.enabled = true;
+            $anchorScroll();
         }
 
         function showTab(tab) {
@@ -67,7 +74,7 @@
         }
 
         function goToPattern(pattern) {
-            console.log("going to ", pattern);
+            $state.go('pattern', { name: pattern});
         }
 
         function hideLink(pattern) {

@@ -5,9 +5,9 @@
         .module('homs')
         .controller('knitsController', knitsController);
 
-    knitsController.$inject = [];
+    knitsController.$inject = ['$state'];
 
-    function knitsController() {
+    function knitsController($state) {
         var vm = this;
 
         // Functions
@@ -120,8 +120,8 @@
 
         }
 
-        function goToPattern(name) {
-            console.log("kgo to pattern ", name);
+        function goToPattern(pattern) {
+            $state.go('pattern', { name: pattern});
         }
     }
 })();

@@ -11,20 +11,14 @@
         var vm = this;
 
         // Functions
-        vm.goToPattern = goToPattern;
 
         // Variables
-
 
         // Constructor
         activate();
 
         function activate() {
 
-        }
-
-        function goToPattern(name) {
-            console.log("go to pattern ", name);
         }
     }
 })();

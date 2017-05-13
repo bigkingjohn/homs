@@ -613,9 +613,5 @@
             function getPattern(name) {
                 return patterns[name];
             }
-
-            function goToPattern(patternName) {
-                $state.go(patternName);
-            }
         }
 })();
