@@ -5,7 +5,7 @@
     <div>
         <h1 class="patternTitle">{{ vm.selectedPattern.title }}</h1>
         <h2 class="designerName">{{ vm.selectedPattern.designer }}</h2>
-        <p>{{ vm.selectedPattern.blurb }}</p>
+        <p ng-repeat="sentence in vm.selectedPattern.blurb">{{ sentence }}</p>
     </div>
     <p>Get the ebook and cast on now! </p>
     <purchase-box></purchase-box>

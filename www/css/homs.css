@@ -252,7 +252,17 @@ a {
 }
 
 .mainImg {
-  width: 400px;
+    width: 400px;
+}
+
+.patternTitle {
+    text-transform: uppercase;
+    margin: 0.5em 0em 0.25em 0em
+}
+
+.designerName {
+    font-size: 1em;
+    margin: 0em;
 }
 
 .ravButton {
