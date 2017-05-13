@@ -269,6 +269,16 @@ a {
     color: red;
 }
 
+.patternTabHeader {
+    /*justify-content: space-around;*/
+}
+
+.ravButton {
+    display: flex;
+    padding: 1em;
+    align-items: center;
+}
+
 @media all and (min-width: 0) and (max-width: 42em) {
     .navbar {
         display: none;
@@ -292,6 +302,12 @@ a {
 
     .socialButtons {
         margin: 0.5em auto;
+    }
+}
+
+@media all and (max-width: 28em) {
+    .patternTabHeader {
+        justify-content: space-between;
     }
 }
 
@@ -329,6 +345,10 @@ a {
 
     .bioWide {
         width: 360px !important;
+    }
+
+    .patternTabHeader {
+       justify-content: space-around;
     }
 }
 

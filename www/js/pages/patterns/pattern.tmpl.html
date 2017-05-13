@@ -14,10 +14,11 @@
             <!-- <img src="{{ vm.selectedPattern.ravelryGif }}" style="border: none;" /> TODO REMOVE INLINE STYLE!-->
             <img src="{{ vm.selectedPattern.ravelryGif }}" />
         </a>
-        <span>&lt; browse {{ vm.selectedPattern.title }} sweaters on Ravelry</span>
+        <i class="material-icons">keyboard_arrow_left</i>
+        <span>browse {{ vm.selectedPattern.title }} sweaters on Ravelry</span>
     </div>
     <div>
-        <div class="flexContainer">
+        <div class="flexContainer patternTabHeader">
             <p ng-repeat="info in vm.selectedPattern.info" ng-click="vm.showInfo(info)" ng-class="{ 'selectedInfo': vm.isInfoSelected(info) }">{{ info.title }}</p>
         </div>
         <div>
