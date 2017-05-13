@@ -167,6 +167,108 @@ a {
     display: inline-block;
 }
 
+.malariaIntro img {
+    padding: 0;
+}
+
+.flexContainer {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexDuoImgText {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+.flexDuoImgText img {
+    height: 200px;
+}
+
+.flexMiddle {
+    justify-content: center;
+}
+
+.flexMiddleMiddle {
+    justify-content: center;
+    align-items: center;
+}
+
+.flexChild {
+    margin: 0em 1em;
+}
+
+.malariaIntro {
+    align-items: center;
+    justify-content: center;
+}
+
+.designerBio {
+    margin: 1em 0.5em;
+}
+
+.designerBio p {
+    white-space: pre-line;
+}
+
+.designerBio img {
+    border-radius: 15px;
+}
+
+.bioStandard {
+    width: 240px;
+}
+
+.bioWide {
+    width: 280px;
+}
+
+.yarnSource {
+    margin: 1em;
+}
+
+.yarnSource img {
+    width: 240px;
+
+}
+
+.thumbnails {
+    margin: 1em 0.5em;
+}
+
+.thumbnails img {
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+}
+
+.thumbnails a div {
+    text-align: center;
+    max-width: 200px;
+}
+
+.thumbnailTitle {
+    text-transform: uppercase;
+    color: black;
+}
+
+.thumbnailSubTitle {
+    font-weight: normal;
+    width: 200px; /* same as thumbnail image - forces text to wrap */
+    color: black;
+    font-size: 90%;
+}
+
+.mainImg {
+  width: 400px;
+}
+
+.selectedInfo {
+    color: red;
+}
+
 @media all and (min-width: 0) and (max-width: 42em) {
     .navbar {
         display: none;
@@ -219,6 +321,10 @@ a {
 
     .malariaIntro {
         flex-wrap: nowrap !important;
+    }
+
+    .malariaIntro img {
+        padding: 0 0 0 1em;
     }
 
     .bioWide {
@@ -292,117 +398,4 @@ a {
         color: grey;
         white-space: nowrap;
     }
-}
-
-.flexContainer {
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flexDuoImgText {
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-}
-
-.flexDuoImgText img {
-    height: 200px;
-}
-
-.flexMiddle {
-    justify-content: center;
-}
-
-.flexMiddleMiddle {
-    justify-content: center;
-    align-items: center;
-}
-
-.flexChild {
-    margin: 0em 1em;
-}
-
-.malariaIntro {
-    align-items: center;
-    justify-content: center;
-}
-
-.malariaIntro img {
-    padding: 0 0 0 1em;
-}
-
-.designerBio {
-    margin: 1em 0.5em;
-}
-
-.designerBio p {
-    white-space: pre-line;
-}
-
-.designerBio img {
-    border-radius: 15px;
-}
-
-.bioStandard {
-    width: 240px;
-}
-
-.bioWide {
-    width: 280px;
-}
-
-.yarnSource {
-    margin: 1em;
-}
-
-.yarnSource img {
-    width: 240px;
-
-}
-
-.thumbnails {
-    margin: 1em 0.5em;
-}
-
-.thumbnails img {
-    border-radius: 10%;
-    width: 200px;
-    height: 200px;
-}
-
-.thumbnails a div {
-    text-align: center;
-    max-width: 200px;
-}
-
-.thumbnailTitle {
-    text-transform: uppercase;
-    color: black;
-}
-
-.thumbnailSubTitle {
-    font-weight: normal;
-    color: black;
-    font-size: 90%;
-}
-
-/*.carousel {
-
-}
-
-.carousel img.mainImg {
-  width: 100%;
-}
-
-.carousel img.subImg {
-  width: 20%;
-}*/
-
-.mainImg {
-  width: 400px;
-}
-
-. selectedInfo {
-    color: red;
 }
