@@ -3,7 +3,6 @@ body {
   font-size: 16px;
   line-height: 1.2em;
   max-width: 56em;
-  /*min-width: 13em;*/
   margin: 1em;
 }
 
@@ -37,7 +36,6 @@ a {
     max-width: 50em;
     display: block;
     margin: 0;
-    /*background-color: red;*/
 }
 
 .navbar {
@@ -68,7 +66,6 @@ a {
 }
 
 .navMenu {
-   /* Height & width depends on how you want to reveal the overlay (see JS below) */
     height: 100%;
     width: 100%;
     position: fixed; /* Stay in place */
@@ -85,14 +82,7 @@ a {
 }
 
 .navButtons {
-    /*Centre the menu vertically on the screen - may not be the desired affect, especially if we add an image to the top of the menu*/
-    /*feels like there should be a better solution as this is old school.*/
-/*    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);*/
-    /*background-color: blue;*/
     display: inline-block;
-    /*padding: 0.5em;*/
 }
 
 .navButtons div {
@@ -269,14 +259,43 @@ a {
     color: red;
 }
 
+.patternTab {
+    border-top: solid lightgrey 2px;
+    padding: 1em 0 0.5em 0;
+}
+
 .patternTabHeader {
-    /*justify-content: space-around;*/
+    background: lightgrey;
+}
+
+.patternTabHeader p {
+    border: solid lightgrey 2px;
+    margin: 0;
+}
+
+.patternTabContent {
+    border: solid lightgrey 2px;
 }
 
 .ravButton {
     display: flex;
     padding: 1em;
     align-items: center;
+}
+
+.patternThumbs {
+    border-top: solid lightgrey 2px;
+    margin: 0.5em 0;
+}
+
+.patternThumbs h2 {
+    font-size: 1em;
+    margin: 0.25em 0;
+}
+
+.patternThumbs img {
+    margin: 0.25em;
+    border-radius: 1em;
 }
 
 @media all and (min-width: 0) and (max-width: 42em) {
@@ -306,8 +325,13 @@ a {
 }
 
 @media all and (max-width: 28em) {
-    .patternTabHeader {
-        justify-content: space-between;
+    .patternTabHeader p {
+        padding: 0.25em;
+    }
+
+    .patternThumbs img {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -347,8 +371,13 @@ a {
         width: 360px !important;
     }
 
-    .patternTabHeader {
-       justify-content: space-around;
+    .patternTabHeader p {
+        padding: 0.25em 0.5em;
+    }
+
+    .patternThumbs img {
+        width: 120px;
+        height: 120px;
     }
 }
 

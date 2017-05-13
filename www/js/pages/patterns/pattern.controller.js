@@ -55,7 +55,7 @@
                         content: "needles...",
                     },
                     {
-                        title: "useful tutorials",
+                        title: "tutorials",
                         content: "useful tutorials...",
                     },
                 ]
@@ -108,7 +108,7 @@
             fade: false,
             centerMode: true,
             centerPadding: '0px',
-            // adaptiveHeight: true,
+            adaptiveHeight: true,
             infinite: true,
             dots: true,
             method: {},

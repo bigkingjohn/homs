@@ -2,7 +2,7 @@
     <slick settings="vm.slickConfig">
         <img class="mainImg" ng-repeat="photo in vm.selectedPattern.photos" src="{{photo}}"/>
     </slick>
-    <div><!-- <div class="rightPanel"> -->
+    <div>
         <h1 class="patternTitle">{{ vm.selectedPattern.title }}</h1>
         <h2 class="designerName">{{ vm.selectedPattern.designer }}</h2>
         <p>{{ vm.selectedPattern.blurb }}</p>
@@ -11,23 +11,22 @@
     <purchase-box></purchase-box>
     <div class="ravButton">
         <a href="{{ vm.selectedPattern.ravelryLink }}" target="new">
-            <!-- <img src="{{ vm.selectedPattern.ravelryGif }}" style="border: none;" /> TODO REMOVE INLINE STYLE!-->
             <img src="{{ vm.selectedPattern.ravelryGif }}" />
         </a>
         <i class="material-icons">keyboard_arrow_left</i>
         <span>browse {{ vm.selectedPattern.title }} sweaters on Ravelry</span>
     </div>
-    <div>
+    <div class="patternTab">
         <div class="flexContainer patternTabHeader">
             <p ng-repeat="info in vm.selectedPattern.info" ng-click="vm.showInfo(info)" ng-class="{ 'selectedInfo': vm.isInfoSelected(info) }">{{ info.title }}</p>
         </div>
-        <div>
+        <div class="patternTabContent">
             {{ vm.selectedPatternInfo.content }}
         </div>
     </div>
-    <div>
-        <h2 class="designerName">Other designs from Heart On My Sleeve:</h2>
-        <div class="morePatternsbox">
+    <div class="patternThumbs">
+        <h2>Other designs from Heart On My Sleeve:</h2>
+        <div class="flexContainer flexMiddleMiddle">
             <img ng-repeat="pattern in vm.patternLinks" src="{{ pattern.imageUrl }}" ng-click="vm.goToPattern(pattern.name)" ng-hide="vm.hideLink(pattern.name)"/>
         </div>
     </div>
