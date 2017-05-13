@@ -272,8 +272,7 @@ a {
 }
 
 .patternTab {
-    border-top: solid lightgrey 2px;
-    padding: 1em 0 0.5em 0;
+    padding: 0.5em 0;
 }
 
 .patternTabHeader {

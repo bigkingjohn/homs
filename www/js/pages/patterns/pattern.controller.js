@@ -5,9 +5,9 @@
         .module('homs')
         .controller('patternController', patternController);
 
-    patternController.$inject = ['patternService'];
+    patternController.$inject = ['$stateParams', 'patternService'];
 
-    function patternController(patternService) {
+    function patternController($stateParams, patternService) {
         var vm = this;
 
         // Functions
@@ -54,7 +54,8 @@
         function activate() {
             vm.selectedTab = "sizing";
             vm.patternLinks = patternService.patternLinks;
-            vm.selectedPattern = patternService.getPattern('crazyheart');
+            vm.selectedPattern = patternService.getPattern($stateParams.name);
+            vm.slickConfig.enabled = true;
         }
 
         function showTab(tab) {
