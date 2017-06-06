@@ -19,7 +19,7 @@
                 image: "images/logo-baaramewe.png"
             },
             {
-                url: "https://www.jarbon.com/",
+                url: "https://www.brooklyntweed.com/",
                 image: "images/logo-brooklyntweed.jpg"
             },
             {

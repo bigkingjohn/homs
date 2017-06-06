@@ -319,6 +319,10 @@ a {
     margin: 0;
 }
 
+.patternTabContent img {
+    width: 100%;
+}
+
 .tutorialList li {
     padding: 0.3em 0;
 }
@@ -336,6 +340,11 @@ a {
     margin: 0.25em;
     border-radius: 1em;
 }
+
+.imgFooter {
+    width: 100%;
+}
+
 
 @media all and (min-width: 0) and (max-width: 42em) {
     .navbar {
