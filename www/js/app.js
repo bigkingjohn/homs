@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('homs', ['ui.router', 'slickCarousel']);
+        .module('homs', ['ui.router']);
 
 })();
 

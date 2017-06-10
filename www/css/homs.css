@@ -259,10 +259,6 @@ a {
     font-size: 90%;
 }
 
-.mainImg {
-    width: 400px;
-}
-
 .patternTitle {
     text-transform: uppercase;
     margin: 0.5em 0em 0.25em 0em
@@ -499,4 +495,104 @@ a {
         color: grey;
         white-space: nowrap;
     }
+}
+
+.carouselContainer {
+    display: flex;
+    align-items: center;
+    /*width: 100%;*/
+    /*border: solid*/ blue 2px
+}
+
+.carousel {
+    /*width: 100%;*/
+
+    /*border: solid*/ red 2px;
+}
+
+.mainImg {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+/*    animation-name: borderAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;*/
+
+    /*border: solid*/ green 2px
+}
+
+.doSlideIn {
+    opacity: 0;
+    left: -100%;
+
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+}
+
+.doSlideOut {
+    animation-name: slideOut;
+    animation-duration: 0.5s;
+
+}
+
+@keyframes borderAnimation {
+    0% {
+        opacity: 0;
+        left: -100%;
+    }
+    15% {
+        opacity: 1;
+        left: 0;
+    }
+    85% {
+        opacity: 1;
+        left: 0;
+    }
+    100% {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        left: -100%;
+    }
+    80% {
+        opacity: 0;
+        left: -100%;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        opacity: 1;
+        left: 0;
+    }
+    80% {
+        opacity: 1;
+        left: 0;
+    }
+    100% {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.middleX {
+    left: -75%;
+}
+
+.leftX {
+    left: 0%;
+}
+
+.rightX {
+    left: 75%;
 }

@@ -1,0 +1,5 @@
+<div class="carouselContainer">
+    <div class="carousel">
+        <img class="mainImg " ng-repeat="image in vm.images" src="{{ image }}" ng-show="vm.showImage($index)" ng-class="vm.getCSS($index)"/>
+    </div>
+</div>
